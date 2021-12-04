@@ -7,3 +7,15 @@
 body {
     font-family: 'Poppins', sans-serif;
 }
+
+#apple {
+    background: #000;
+    margin-top: 10px;
+    outline: none;
+}
+
+.TAC {
+    font-size: small;
+    margin-top: -20px;
+    margin-bottom: 45px;
+}

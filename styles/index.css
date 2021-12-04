@@ -26,6 +26,7 @@ body {
 
 #cards {
     display: flex;
+    scrollbar-gutter: 0;
     width: 98%;
     margin: auto;
     align-items: center;
@@ -45,4 +46,11 @@ body {
     position: relative;
     left: 0;
     transition: 0.5s;
+}
+
+@media screen and (max-width: 768px) {
+    #card {
+        min-width: 49%;
+        margin:  0 10px  0 0;
+    }
 }
