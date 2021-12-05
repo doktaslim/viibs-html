@@ -19,6 +19,7 @@ users.map(user => {
     `
 });
 
+
 users.map(user => {
     return document.querySelector('#actors').innerHTML += `
         <div id='card' class="w-full card h-96 max-h-96 rounded">
@@ -38,6 +39,44 @@ users.map(user => {
     `
 });
 
+
+users.map(user => {
+    return document.querySelector('#creators').innerHTML += `
+        <div id='card' class="w-full card h-96 max-h-96 rounded">
+            <div class="flex flex-col">
+                <img src=${user.img} alt="profile" id='userImg' class="rounded w-full h-60 max-h-60 object-cover">
+                <div class="space-y-1 card-details">
+                    <div class="flex flex-col">
+                        <p class="font-medium">${user.name}</p>
+                        <p class="text-gray-600">${user.niche}</p>
+                    </div>
+                    <div class="flex items-center">
+                        <p class="text-base">From &#8358;<span class="text-base">${user.price}</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    `
+});
+
+users.map(user => {
+    return document.querySelector('#musicians').innerHTML += `
+        <div id='card' class="w-full card h-96 max-h-96 rounded">
+            <div class="flex flex-col">
+                <img src=${user.img} alt="profile" id='userImg' class="rounded w-full h-60 max-h-60 object-cover">
+                <div class="space-y-1 card-details">
+                    <div class="flex flex-col">
+                        <p class="font-medium">${user.name}</p>
+                        <p class="text-gray-600">${user.niche}</p>
+                    </div>
+                    <div class="flex items-center">
+                        <p class="text-base">From &#8358;<span class="text-base">${user.price}</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    `
+});
 
 let span = document.querySelectorAll('#span');
 let card = document.querySelectorAll('#card');

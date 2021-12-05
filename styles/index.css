@@ -24,7 +24,7 @@ body {
     color: '#000814';
 }
 
-#cards {
+#cards, #actors, #creators, #musicians {
     display: flex;
     scrollbar-gutter: 0;
     width: 100%;
@@ -77,15 +77,15 @@ body {
     background-color: #04070f;
 }
 
+.mobile {
+    background: #f1f1f1;
+    width: 100%;
+}
+
 #userImg:hover {
     cursor: pointer;
-    /* height: 100%;
-    width: 100%; */
-    /* position: absolute; */
-    /* opacity: 0; */
-    /* inset: 0px; */
-    /* overflow: hidden; */
 }
+
 
 @media screen and (max-width: 768px) {
     #card {
