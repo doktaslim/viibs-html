@@ -27,15 +27,22 @@ body {
 #cards {
     display: flex;
     scrollbar-gutter: 0;
-    width: 98%;
+    width: 100%;
     margin: auto;
     align-items: center;
-    overflow-x: auto;
-    /* height: 600px; */
+    overflow-y: auto;
+    overflow-x: hidden;
+    /* height: 200px; */
 }
 
 #cards::-webkit-scrollbar{
-    display: none;
+    display: none!important;
+}
+
+#span:hover {
+    color: #fff;
+    cursor: pointer;
+    background-color: #000814;
 }
 
 #card {
@@ -46,11 +53,52 @@ body {
     position: relative;
     left: 0;
     transition: 0.5s;
+    border: none!important;
+}
+
+.card-details {
+    background-color: #04070f;
+    color: #fff;
+    font-size: 18px!important;
+    padding: 10px 0 0 0;
+}
+
+.button {
+    background-color: #ff037c;
+    border: none;
+}
+
+.button:hover {
+    background-color: #000814;
+    transition: 0.5s;
+}
+
+.featured {
+    background-color: #04070f;
+}
+
+#userImg:hover {
+    cursor: pointer;
+    /* height: 100%;
+    width: 100%; */
+    /* position: absolute; */
+    /* opacity: 0; */
+    /* inset: 0px; */
+    /* overflow: hidden; */
 }
 
 @media screen and (max-width: 768px) {
     #card {
-        min-width: 49%;
+        min-width: 70%;
         margin:  0 10px  0 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .card-details {
+        background-color: #04070f;
+        color: #fff;
+        font-size: 18px!important;
+        padding: 10px 0 0 0;
     }
 }
