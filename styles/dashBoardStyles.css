@@ -1,0 +1,112 @@
+body {
+    margin: 0;
+    padding: 0;
+    /* background: #000; */
+}
+
+.main {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    top: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.carousel {
+    width: 100%;
+    height: 30rem;
+    color: #000;
+}
+
+.carousel-item img {
+    height: 30rem;
+}
+
+.carousel .carousel-control-prev,
+.carousel .carousel-control-next {
+  width: 25px;
+  height: 25px;
+  background-color: #101010;
+  padding: 5px;
+  border-radius: 50%;
+  top: 45%;
+  opacity: .8;
+}
+
+.carousel .carousel-control-prev {
+  left: unset;
+  left: 5px;
+}
+
+.carousel .carousel-control-next {
+    right: unset;
+    right: 5px;
+  }
+
+._3sz-Jorbvi2LDO38TpQcMl._1Y3M6YmHSkxJvwPp5ectyT {
+    background-image: unset;
+    background-size: unset;
+    background-repeat: unset;
+}
+
+@media screen and (max-width: 1120px){
+    .carousel .carousel-control-prev,
+    .carousel .carousel-control-next {
+      top: 30%;
+    } 
+}
+
+@media screen and (max-width: 900px){
+    .carousel .carousel-control-prev,
+    .carousel .carousel-control-next {
+      top: 25%;
+    } 
+}
+
+@media screen and (max-width: 700px){
+    .carousel .carousel-control-prev,
+    .carousel .carousel-control-next {
+      top: 20%;
+    } 
+}
+
+@media screen and (max-width: 600px){
+    .carousel .carousel-control-prev,
+    .carousel .carousel-control-next {
+      top: 15%;
+    } 
+}
+
+@media screen and (max-width: 475px){
+    .carousel .carousel-control-prev,
+    .carousel .carousel-control-next {
+      top: 12%;
+    } 
+}
+
+@media screen and (max-width: 400px){
+    .carousel .carousel-control-prev,
+    .carousel .carousel-control-next {
+      top: 10%;
+    } 
+}
+
+@media screen and (max-width: 345px){
+    .carousel .carousel-control-prev,
+    .carousel .carousel-control-next {
+      top: 8%;
+    } 
+}
+
+._3sz-Jorbvi2LDO38TpQcMl {
+    background-image: linear-gradient(180deg,transparent,#101010),linear-gradient(135deg,#bd00ff,#ff3c26);
+    background-size: 100% 503px;
+    background-repeat: no-repeat;
+    background-color: #101010;
+}
+
+div {
+    display: block;
+}
