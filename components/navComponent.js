@@ -21,7 +21,7 @@ class Navbar extends HTMLElement {
           align-items: center;
           margin: 0;
           padding: 0px 5px;
-          background-color: #1b1b32;
+          background-color: #1b1b32!important;
           max-width: 100%;
           overflow-x: hidden
         }
