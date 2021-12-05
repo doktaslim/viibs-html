@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9ceae30f-7948-4b49-a2d0-3cdfa6d29e36" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/pages/register.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/styles/register.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javascript/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/javascript/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/login.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/login.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,6 +33,7 @@
       <option name="presentableId" value="Default" />
       <updated>1638543683352</updated>
       <workItem from="1638543686209" duration="12000" />
+      <workItem from="1638690900650" duration="599000" />
     </task>
     <servers />
   </component>
