@@ -78,7 +78,7 @@ users.map(user => {
     `
 });
 
-let span = document.querySelectorAll('#span');
+// let span = document.querySelectorAll('#span');
 // let card = document.querySelectorAll('#card');
 // let card_page = Math.ceil(card.length/4);
 // let l = 0;
