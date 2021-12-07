@@ -2,7 +2,7 @@ import users from "../jsondata/cardDetails.js"
 
 users.map(user => {
     return document.querySelector('#cards').innerHTML += `
-        <div id='card' class="w-full card h-96 max-h-96 rounded">
+        <div id='card' class="w-full card controller1list h-96 max-h-96 rounded">
             <div class="flex flex-col">
                 <img src=${user.img} alt="profile" id='userImg' class="rounded w-full h-60 max-h-60 object-cover">
                 <div class="space-y-1 card-details">
@@ -22,7 +22,7 @@ users.map(user => {
 
 users.map(user => {
     return document.querySelector('#actors').innerHTML += `
-        <div id='card' class="w-full card h-96 max-h-96 rounded">
+        <div id='card' class="w-full card controller2list h-96 max-h-96 rounded">
             <div class="flex flex-col">
                 <img src=${user.img} alt="profile" id='userImg' class="rounded w-full h-60 max-h-60 object-cover">
                 <div class="space-y-1 card-details">
@@ -42,7 +42,7 @@ users.map(user => {
 
 users.map(user => {
     return document.querySelector('#creators').innerHTML += `
-        <div id='card' class="w-full card h-96 max-h-96 rounded">
+        <div id='card' class="w-full card controller3list h-96 max-h-96 rounded">
             <div class="flex flex-col">
                 <img src=${user.img} alt="profile" id='userImg' class="rounded w-full h-60 max-h-60 object-cover">
                 <div class="space-y-1 card-details">
@@ -61,7 +61,7 @@ users.map(user => {
 
 users.map(user => {
     return document.querySelector('#musicians').innerHTML += `
-        <div id='card' class="w-full card h-96 max-h-96 rounded">
+        <div id='card' class="w-full card controller4list h-96 max-h-96 rounded">
             <div class="flex flex-col">
                 <img src=${user.img} alt="profile" id='userImg' class="rounded w-full h-60 max-h-60 object-cover">
                 <div class="space-y-1 card-details">
