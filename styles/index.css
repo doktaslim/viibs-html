@@ -86,6 +86,19 @@ body {
     cursor: pointer;
 }
 
+footer {
+    background: #1e1b1e;
+}
+
+ul li a {
+    text-decoration: none;
+}
+
+ul li a:hover {
+    text-decoration: none;
+    color: #f59e0b;
+}
+
 
 @media screen and (max-width: 768px) {
     #card {
