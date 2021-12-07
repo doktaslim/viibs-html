@@ -58,37 +58,7 @@
         <!-- <script src="/components/navComponent.js" type="text/javascript" defer></script> -->
         <title>Viibs || Login</title>
     </head>
-    <style>
-        body {
-            background: #04070f;
-        }
-        form {
-            position: relative;
-        }
-        #name {
-            border: none;
-            border-bottom: 2px solid #fff;
-            background-color: unset;
-            outline: none;
-            font-family: "Inter", "Poppins", Helvetica, sans-serif;
-            font-size: 13px;
-            color: #fff;
-            min-width: 60vmin;
-        }
-        label {
-            position: absolute;
-            left: 0;
-            color: #fff;
-            transform-origin: 0 0;
-            transition: transform 0.2s ease-in-out;
-        }
-        input:focus + label, input:not(:placeholder-shown) + label{
-            transform: translateY(-1em) scale(0.8);
-        }
-        input::placeholder {
-            color: transparent;
-        }
-    </style>
+    
 
     <body>
         <!-- <nav-component></nav-component> -->
@@ -159,39 +129,140 @@
             </nav>
         </header>
         <!-- End of Navbar -->
-        <main>
-            <div class="container-fluid main" style="padding-top: 5px">
+        <main class="container-fluid main booking_container">
+            <div  class="booking_state">
                 <p>1. Account</p>
                 <p>2. Request</p>
                 <p>3. Payment</p>
             </div>
-            <div>
-                <img src="" alt="">
-                <h1>New Request For Bencode</h1>
+            <div class="image_desc">
+                <!-- <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHCBUVFRgWFRUZGBgaGRwcGhkYGBgYGhwcGRgZIRkcGhgcIS4lHCErIxwcJjgmKy80NTU1HCQ7QDszPy40NTEBDAwMEA8QGhISHTEkJCsxNDQ0NDQxNDQ2NDE0NDQ0MTQ0NjQ0NDQxNDQ0NDE0NDQ0NDE0NDQ0NDQ0NDQ0NjQ/NP/AABEIANAA8wMBIgACEQEDEQH/xAAcAAABBQEBAQAAAAAAAAAAAAAAAQIDBAUGBwj/xABIEAABAwEDCQQFCQYFBAMAAAABAAIRAwQSIQUxQVFhgZGh8CJxscEGkrLC0RMyQlKCotLh8QcUI3Kz8kNixNPiY4Pj8xUkU//EABgBAQEBAQEAAAAAAAAAAAAAAAABAgME/8QAIBEBAQEBAAIDAQEBAQAAAAAAAAECESExAxJBUSJhBP/aAAwDAQACEQMRAD8A8gQhCoEIQgEIQgEJUIEQlQgRKhPYxS3iydNaxTMp7FNRsxK0KNhK56265wospbE7932LYZk9WaeTJ0LH3b+jmKtk1YKq5hGddjXyWRhE7lkWrJxxwW87/rGvj/jEhEKStTLTBUa6OJEJUKhEIQgEIQgEIQgEIQgEIQgVCEIBCEIBCEIBCEIBCEIHU2yVo2eiq1kYtOgxctadsZWbNSWlRpKOysWixi42O88HWeiCtWzWUQJVOzszrVszsM3h5K5iaqT91bGGdY9vyfnwXQNKqWgTKuoZ089yrk/Arm3NgwvSMo2YELg8p0bj+9a+PX45fNn9imhEIXZwIlSBKqBCEIBCEIESoQgEIQgEIQoBCIQgEIQgEIQgEIQEGjZQtWzsWRZXrasrwQFx09GGlZ2wrzFToAnQtGlTMYrFdZD2BaFjOGKpBWKFQA4rM15W58NEO2qGs8IZaGRi4RH6qlacrWdki/J2Yrfe+mOc9qGUKkLkfSGmBBXQ26uCbwIIJwIKw8qMdXcG02lxGeMwzwJTHtPkn+XOoT6tMscWuzgwdOKYvQ8oQhCAQhCAQhCAQhCAQhCAQhCAQhCAQhCAQhCoFLRYHGCY26N6iU9mOKl9NZ53yKLLt5zr11rg0lsZyHQMcBN047CrFK3kDsNcNrntPK6FVe0kGNeI7pUbWGJ0LPir5l8NMZQtIF4OgHYPgl/+ftP/AOk94HwTbPYnvph7BexgtES0y2C6RiCJGEYwosoWG4Wi+CSMQMYOqRgVOT+L9tLY9Jq7YwbOsg/FMd6S2h2ALR3N+Kpfu95zWtxmd6tWrJzqb2Me26XCNhnMRrxw4Kcz/G+699RDKVdzsahO5pHAhasuuXnPr7Sx1JonY1vaCyrDSYHlrzGBAJzA6CROI2K5VsTGUyflGOqEgNDIwEmZgAknateHPzfata67s7K1U6e08nDvBWp6O2yo5p7bp7d55cSYLWXQ2fpA3sceWOcbEW0nvOoxv6Ks5NsLmXST9EvdhgBAwnuWdXxW8z/UZNrp3Xub9UxwUCfWeXOc453OLuJlMXSenK+whCFUCEIQCEIUAhCFQIQhQCEIQCEIVAhCEAhCEAnMMGUiVQXGEXpGY4qazURL2nAHtN8+Cp0HLWoNa4QQHDURK568O+fKOhYXQQHlo1fontycG4kydZjkFZbkxrs0gbHO+KrWvJjGkAEkzpJMcVn7RZn/AIu+jdjDqrqmhvZZpx0ny4rrcv5GNosrXCBUpm807c907D8Fhejj6bXXSQBB4wukflpjaRaXASdK461ft13mZ9eOOp2az2ht681r/pMJhzTpHdKdTybQZ857dkubj3TnUdrslMVy8NljzMj6xz8/FdBZbJTAvNK7TU45XNY1t/iRTY2KQguecL0fRaNOqc2J2KrlO1tbRqNA7T3NAM4XRnEaVr290ZswXH5VqS+NAHM9BM/60zr/ADFFCVC7vOalhIE5A1CWEAIEQlhIgEICCgEIQgEIQgEJUIEQlSoESoQoBCEIJKRWrZqmZY7SrlN8LGo6Zrfp18FO5jGscXxJx7tSxadeFDabVfMEw0czsWJl0uuekDa91zi3Tx4qWk8PPbMta4GCdGlWKBpNE3GnWDeJ4yrVnt9MAtbTYwRmuh97vc+THct+J+M8t/XaNFnr2cNZdADQBdwLTGGCw2VyyWk5sOCyKOUWsdLAG6w0m44HOQCcDyU9Ste7U51jWWpr8LbK8yuYtL5e47fBbj2ueCGAucGvdA1MY5zjua0ncueK3jPPLn8muhCELo5mhOTQnIBCEIBIlQgSEEJUIGoTkKBEQgJVQIQhAIQhAIQhAISSnAILWSad6vSGf+Iz2xPJTZQsvyNWpT+o8tHd9HiITvR1wFpol2b5Ro3nAcyF0Pp5k0tc20NHZeGtfsc0BoPANk63BWzwua5am7QVKxrGkGAQOs2lVRgrFMNntZtOxc7G5XQ2TK1nDQCWxGEtgjdmWi30gs7R2SwfZGjUAFzX7jRiS9Pbk6zn/E5YeCx9Y6/e84u5QyjSqnsMAwxeWtDndw0BZ/ywGARUoMZgHTqUVJklamWLfLofRKP3uhP033ANYc1wM7Fz/pBk35Ks9rczXvb6riJ5LY9F7zso2RrcbtVrjGhsgefNS+lQvWivsqvjH/OdC64z4c9Xy4uELXfZWuzj4qpUsJ+iZ8VbmsqSVK5pBxEJFkCEIQCEIQCEIQCEIQCEIQCEJR3IESEoKk+SMTn6/NXgjQGqUMTrvXW/inBGxqdCeGpCFeB1lMPY7ND2me5wXsdtsTa1J9Nw7LgQdgdhxBh//bXjThgV7nYWywEibwmNcwD6xIYP5nKyDxK12d9B5pvBkZuMEbiCNyqueeelel+neRC9hqMF5zDeJH0hgHHfLH/bOpeZPG5Zs4JDUMd3gnfLTmzqBurxThMdcFBbNZ0zwGeJGfjCnFS6Mc/P8lUpN2jN4KzYLE6vVbTbMuOJ+q0fOduHOFK1HffshyWXVKlqcPm9hh2gFxP3W8CsXLL5tNpx/wAeoNWAe4DkvWvRTJrbPQutECQI2Nbd9+d68jyq2LTaB/16v9R2nfyXXM54Zqi1ujylRlkdR1+mpTxz1yUtycOWfkVpFSrQDsCOuvEKjVydqPH4rqR6P2i7euDuLm3iNonPjzKq2mw1GCXsLRuOvCRgCY+9sVvx39jM3m+JXKVKDm5x8FGukfR67sJ5KtUye043eGC53P8AG2IhaVXJulh3H4qm+zPbJLc2dZubBChCFAIQhAIAQnU86QPNPHckdipntx3JGs663rXBG1k51MwQI1eGPlPAJ7WddbuKLsERpw/D7vFUIWddbR94KOOutynjrrZHqphHXj4u4II9yOuuIT468fe4II667zwQMuSCNnj0F2tr9On3Gss1O6brQaj8TMAdhgMCJMEznJiSI5BreuP/ACG4LqcjZIa5jHgTIHu/AqwSWahaajRWfWqPkYtvuAgsdjdBDQMwiM2GZXMt+i9O0XajXCnUOBIbLHkSGlwkXSbucb1v5Kpw1rY0Nw19mg0Du7RUwoXBrZgY1XWkztBc47gVfrKPJcpZDq0HXajY1OElro0tMcjBxGGIUDLIV7Hb8jsqsLHyWzMjAgtvi8NzHn7QC4nKWR/kKzabnYPIhxGYF0GRraZB7ly3LPTeZK56jk9ziGtBJOAAEknUAM67bIWTG5OYbVaIvkRTozi930GyJwktLtAB0wukyZkr92BDWta8YF8B1QkkAC8RgJ0AAeKx7fk51oe1zyXGWgE4wC+iQBsF5XOL7qas/GJR/aXbGvBcKZp4B1MMjsgNzPJm9DW46xmVXLFdlS01XsMse8OHc9rSebzwVjKnoz2W3RBgc2Uh4uWPRoljnNOz7zR+JvBdJOMpgNmJ0Y4z3faXQ2Ch8nTaXsBeHXnSA5wM4AHZhwKwqVQte14AJa5rhObBzT7xW7aMoMBZUAJpucb40tkEHeCZIXp+CTt68v8A6LrkkLlLLl1rA2CXsY6dtQOI3ANlVbNb31ZY/M6WzE5iLp3GOHcoLVkNzqjHU+3RIbce0l10tLoBukG7DiJ2AHWtCwZPeJe+AczQ3MMRB6nyHo9+K4XmZOOdulri0529nDW3A49/jsUgai3Paaryz5pc4jiZjZn4hDOuu/wXh55e+XslI6moKrBeiPnNcDuj4q3113qG0DFh2kfdPwRXLVGXSRqJHBNV3KdGHl2hxPHSqS4WcqhCEKAClptxTWNUrVqQTubjw4SZ62JQOuto5pRGHd1yMpw667xzWgAfl5e6mVGyDG7y8RwUt3rw91Bx61/3ckDBiJ0HHccT4u4Jjhr6zz76WjmI1E8MTHC8N6V+HXWkffUEZHXj4O4p7W7+vjPrIY3rhHu8SpGt62R8I9UoEA/Xhj7J4r0T0SYHUmbWndArfgXnh6HHD2hwXovoVjQB+q5zT6lc87071qDpKVkh2b6Q5Os/wUrKBgDW0DiykzlfcVqvpi99o/1GD3U25EfZ9qkE6io17GtvuIa0kYHMBIcR6pj7Tis22ZOoVyxz7r3MzZyJIF4kfSxa8icMStuy0ZY0mCDD4ObssIAPqP4hWjY2gudEdmNfzW1x13Kd/FZ72F77xES4GPt0j8UWOwRdJH1OXyH4VrOpATsLjwvn3E97YB2T90P/AAJ9kc/aLCIbI+ry/d/wleZZcpXK8Af4bDvDS3xaF7Db2YOjQHxuFYD2Gryr0zZdtDTsePVqvcOULUoyO7b70e6pqFqcyWgBzHGSx2acMQRmMHkoG4bvKPwHinObhG7kR5BamrL2JrM1OVcoPs4F/t0njGGtviY7iHDvAzKrbrZUqPxqPDBhdwaXY43gwDURCSJ3+f8Aeos5G3z/ALzwW9fJrU4xPhzm9R5j3YeH/HgpWOHWr9BzULHTJzT5/mTwQdnU4DkFydFgu63Y/BRWh3zf5vFpgcOaj+U19SSfgmvfN3jyJ5BXopW0F94aBjvWUti9ie/H4LMtLIcduIXLU/VRIQhZErFJ18Exqd11vWxODm66zjgpGn4+B+Kga/Ad/wCfmntd5eYQSgdcvwpeuP5O5JGdd/6gJXdd36EcFRCMH9455/HBPujrdHK6dxTazcx24+fMFS9eMj2xwUCR1x8pH2Ql8evOfXCXmfOR5x65TY64Y8C31SgVgx8Dwg+wd5XonoG2aFTY/kaNSPhuXn1OOu4yOF71V6L+z0TRrT9dv9GtPME71qD0EswOvH2nnySOpyI1Ecnkn+mpXDE/aHOt8EVRBcf5vC0/ksoiyV2qLP5bu/tD31cznvPtOH+6VXyey6XtGYVnwNhfSI81YYIjYG8hSPulShrSHb4+8GT/AFXJ3zt/vf8AtPBRvF0dw9lh/wBtK90Xtl7l8sB7DUEdUTE6Y+86nP8AUcvKPTlhD6bj/mneyi78S9crNmY/zRuvxzaxeZftJpXSw6L+HdNSfu3FrI5Jg67s/su4p45/D82nio2fr4H3lID1zPg5aUkaOtIHuqN50955GPFqeRHWr+0cVHU667g1EQUxo66wPFNdI8eUBTsZHXLwHFa/o7kWrVf8tc/hUyCXOwvHG6Wg/OAIBJ7hjjC2T2snXPv07/dCY8iePIAeErvP2hZEDG0qtNsw25UDZdAHaY8x9GLwJ/lXnj3+fN0+AKkvSzng0OdmVe1twlSC0RoTanaEjeFL6RSQllC5qlaE7rwKYDCeHjN1p+K2EJjlylPD/BRv63/qkaUFtj/PyKlHXH4FVGuUzD1uVEzxIjrqRzTaRkDX54f8TvKW91uBTaeBcNGfxnl4IHZ9g8B+h+6nR+nGR7Y4IHXPzvesEDrlB9k7ygNPXWf216N+zd4NOu3U5rtxo2gDyXnJHXW71V3X7Nan8aozNfpjDaHtaOHyjuCo9QqH532/9V8FM8TI7xzqDzVVuLSRpBPFlUj+o3ip34Ena48HVj4NWQlE4v8A5p4scfdClrGA77XJtf8ACFVs57dRpzw3hdew8yrldrXAFhxJIOOttQZtHacVL7Dagku73Dia495LAJ7z7T//ACKODeG1w5vpn3ymUp7JOpp5Wc+RRErHfNOst5mgfMrg/wBpVCbOx5+iWj1mUh5OXcF11vc0/dYf9tct+0Bk2Z/+Uz6rq48mqxXl9HECepz+05Sg6ePifeUNn+b1t/EFLPXPzK2AmOtX9o4ppEuYwHF72sbOtxge6UpPXd+bea6r0Dskl9UsBA7DCWl8EQXmARGZvNLeRZOr9i9FbM2P4oqPAksJa4QMD2AcwnMVNabeWVGse9jQSIFx12JGLAHkAjaMNamtlqe95bSYzs53FgDRn+k2picDmWVWs7mmar51hge6dkPkc1y1rv67ZxZ7jYs9VjKRfVAuAEuBzBokOBGmc2OuF4wyYA0xB7x+q6H0l9In1/4TCGUWEANaZvFul7vpHPmw1a1zd8jNif1/JM991z+Sy3kWDEYj9AqrgSZbgnj5UZgNGfuTvl3/AEmAhbc1a4dSFN8szU4IWeKha8jO2f164p91pzHcetnNKB113ocwaR11KCOo0jrrUo2FSPb113lVw6ClFgFSseo24pQFRZa7Nu8ClY7tA6/gI8FA1ye4yOvqoLcddbvVR14/mNwTGPkbdPHriUl7rru5Kh7j113/AHlvehlvFK10nOMNvQdt5puz9oMP2Sudc7rrrEKSk85wYOgjZjPfp4oPoKz1A2BqgcDRaeTHJr7V2Y1gA72sB/qO4FZuSK/y1FlXTUYXkTMEi0kgdxHJbFSgO19rxrDyaoM3I9pc+0uLhAcwGO6tTf41HD7K3abvm/Y8aH4ncVi5Ob/9t50XGxvrs8iFsUzg3ub7NFL7EYJAB1AHgymfFibUqwHDUHDgysPcHBSvzH+U+xU+CbWaO19v/UqBld4l3e4cTXHvLm/TR9+zVW/Wa7m5v4yumrU8T3u9up8QuW9LXtbReTq96lhzC1B5ZRd2et3gE9r+HXkTwUBfAA66wB3ppf11vG9aFq+Outjlt5N9I2WezuoguDi5xJAkYiMM31Suavxj11m9ZVDUMTv8D5lZ1JZytZ1c3sdJb/S6BdpNIbAEPax83cJIOF45yY0rm7blmpUkSGg57rGNMaRLWhVnt6/NQsCxMZjWvl1r3T3ugKSg4DP11B4qs9ynpEautPg5ac1wPHXfjz8EGomNOvrrtFP667lpDJ2IToGzikQf/9k=" alt=""> -->
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkNUiRLbO7CPQdYFbzmxKrUNVtVlrDTyfvqg&usqp=CAU" alt="">
+                <h1>New Request For Jim Iyke</h1>
             </div>
-            <section>
-                <h2>1. Who is this Viibs for?</h2>
-                <div>
-                    <div>
-                        <img src="">
-                        <h3>Someone else</h3>
+            <form action="" class="main_form">
+                <section class="viibs_receiver">
+                    <h2>1. Who is this Viibs for?</h2>
+                    <div class="receiver_desc">
+                        <div class="circle_desc">
+                            <div class="circle_">
+                                <i class="fas fa-gift"></i>
+                            </div>
+                            <h3>Someone else</h3>
+                        </div>
+                        <div class="circle_desc">
+                            <div class="circle_ with_image">
+                                <img class="with_img" src="../images/logo.jpg" alt="">
+                            </div>
+                            <h3>Myself</h3>
+                        </div>
                     </div>
-                    <div>
-                        <img src="">
-                        <h3>Myself</h3>
+                    <div class="form">
+                        <input type="text" id="name" placeholder=" ">
+                        <label for="name">To (first name)</label>
+                        <p class="text-danger">Required **</p>
                     </div>
-                </div>
-                <form>
-                    <input type="text" id="name" placeholder="name">
-                    <label for="name">name</label>
-                    <p>Required</p>
-                </form>
-                <div>
-                    <div>He/Him</div>
-                    <div>She/Her</div>
-                    <div>They/Them</div>
-                </div>
-            </section>
+                    <div class="receiver_gender_type">
+                        <div>He/Him</div>
+                        <div>She/Her</div>
+                        <div>They/Them</div>
+                    </div>
+                </section>
+    
+                <section class="viibs_receiver">
+                    <h2>2. Who is this Viibs from?</h2>
+                    
+                    <div class="form">
+                        <input type="text" id="name" placeholder=" ">
+                        <label for="name">From (first name)</label>
+                        <p class="text-danger">Required **</p>
+                    </div>
+                    <div class="receiver_gender_type">
+                        <div>He/Him</div>
+                        <div>She/Her</div>
+                        <div>They/Them</div>
+                    </div>
+                </section>
+    
+                <section class="viibs_receiver">
+                    <h2>3. What's the occassion?</h2>
+                    
+                    <div class="receiver_desc">
+                        <div class="circle_desc">
+                            <div class="circle_">
+                                <i class="fas fa-gift"></i>
+                            </div>
+                            <h3>Birthday</h3>
+                        </div>
+                        <div class="circle_desc">
+                            <div class="circle_ with_image">
+                                <!-- <img class="with_img" src="../images/logo.jpg" alt=""> -->
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <h3>Holiday</h3>
+                        </div>
+                        <div class="circle_desc">
+                            <div class="circle_ with_image">
+                                <!-- <img class="with_img" src="../images/logo.jpg" alt=""> -->
+                                <i class="fas fa-hand-holding-heart"></i>
+                            </div>
+                            <h3>Pep Talk</h3>
+                        </div>
+                        <div class="circle_desc">
+                            <div class="circle_ with_image">
+                                <!-- <img class="with_img" src="../images/logo.jpg" alt=""> -->
+                                <i class="fab fa-angellist"></i>
+                            </div>
+                            <h3>Roast</h3>
+                        </div>
+                        <div class="circle_desc">
+                            <div class="circle_ with_image">
+                                <!-- <img class="with_img" src="../images/logo.jpg" alt=""> -->
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <h3>Other</h3>
+                        </div>
+                    </div>
+                </section>
+    
+                <section class="viibs_receiver">
+                    <h2>4. Make your request memorable</h2>
+                    
+                    <div class="form">
+                        <input type="date" id="name" placeholder="MM/DD">
+                        <label for="date">When is their birthday</label>
+                        <p class="text-danger">Must be a valid date **</p>
+                    </div>
+                    <div class="form">
+                        <input type="text" id="name" placeholder="Age">
+                        <label for="age">Age (optional)</label>
+                    </div>
+                    
+                    <div class="form2">
+                        <label for="request">Instructions for Jim Iyke</label>
+                        <textarea  class="form-control textarea" ></textarea>
+
+                    </div>
+                    <p>Optional Details</p>
+                    <div class="form2">
+                        <label for="request">What's something about the recipient you want Jim Iyke to know? (optional)</label>
+                        <textarea  class="form-control textarea" ></textarea>
+
+                    </div>
+
+                    <div class="form">
+                        <input type="text" id="name" placeholder="NG +234">
+                        <label for="age">Text me order updates (optional)</label>
+                    </div>
+
+                    <div class="check_box">
+                        <input type="checkbox" >
+                        <p>Hide this Video from Jim Iyke profile</p>
+                    </div>
+
+                    <button type="button" class="continue" >Continue</button>
+                </section>
+            </form>
         </main>
         <!-- Footer -->
         <footer class="py-20 px-2 bg-blue-500">
@@ -341,12 +412,8 @@
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
-    <script type="module" src="./javascript/index.js"></script>
     <script>
-        // funtion to get id of target element for sliding and execute the slider action
-        function gethere(id) {
-            exec(id)
-        }
+        
 
         document.querySelector('#date').innerHTML = new Date().getFullYear()
 
