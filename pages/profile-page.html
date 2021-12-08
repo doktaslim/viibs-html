@@ -7,12 +7,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-    integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet"> 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css"
     integrity="sha512-wnea99uKIC3TJF7v4eKk4Y+lMz2Mklv18+r4na2Gn1abDRPPOeef95xTzdwGD9e6zXJBteMIhZ1+68QC5byJZw=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -21,7 +18,7 @@
   <title>Viibs || Profile</title>
   <style>
     body, .nav {
-      background: #04070f;
+      background: #111827;
     }
   </style>
 </head>
@@ -106,7 +103,10 @@
 
       <div class="grid grid-cols-12 gap-4 mt-8">
         <div class="col-span-12 md:col-span-6">
-          fdc,
+          <div class='flex items-center space-x-6' style="width: 100%; height: 100%;">
+            <img style='width: 80%; height: 80%;' class='rounded h-96 w-40 max-w-40 object-cover' src="../images/user1.webp" alt="">
+            <img style='width: 80%; height: 80%;' class='rounded h-96 w-40 max-w-40 object-cover' src="../images/user2.webp" alt="">
+          </div>
         </div>
         <div class="col-span-12 md:col-span-6">
           <div class="flex items-center space-x-2 text-sm">
@@ -114,6 +114,45 @@
               <i class="fas fa-star text-lg text-yellow-300"></i> <span class="text-white">5.0</span>
             </div>
             <p class='space-x-3 flex items-center'><span class='text-6xl mr-2'>&#183;</span>205 fans</p>
+          </div>
+
+          <div class='flex items-center justify-between'>
+            <div class='flex flex-col'>
+              <h5 class="text-white text-4xl font-semibold">John Doe</h5>
+              <p>Actor - Yellowstone, How to Get Away with Murder, Manhattan</p>
+            </div>
+            <img class='rounded-full h-14 max-h-14 w-14 max-w-14 object-cover border-2 border-blue-500' src="../images/user1.webp" alt="">
+          </div>
+          <span class="bg-gray-800 p-2 text-yellow-300 w-4/12 rounded flex items-center justify-center"><i class="fas fa-bolt mr-2"></i> 24hr Delivery</span>
+
+          <p class='mt-6'>Hey!! Great to meet you!! I play Jimmy in YELLOWSTONE, Philip in HOW TO GET AWAY WITH MURDER, Cole in MANHATTAN, and a bunch of other goons! I’d love to shout out your friends and family!</p>
+
+          <div class="flex flex-col space-y-2 mt-6 w-full">
+            <span class="font-semibold">Choose an option</span>
+
+            <div class="flex justify-between border-2 border-blue-500 rounded p-3">
+              <div class="flex space-x-2">
+                <i class="fas fa-user-friends text-sm"></i>
+                <div class='flex flex-col'>
+                  <h5 class='font-semibold'>Personal Use</h5>
+                  <small class=''>Personalized video for you or someone else.</small>
+                </div>
+              </div>
+              <p class="font-semibold">&#8358; 20,304</p>
+            </div>
+
+            <div class="flex justify-between border-2 border-blue-500 rounded p-3">
+              <div class="flex space-x-2">
+                <i class="fas fa-folder text-sm"></i>
+                <div class='flex flex-col w-11/12'>
+                  <h5 class='font-semibold'>For Business</h5>
+                  <small class=''>Engaging video content for your company, customer or employees.</small>
+                </div>
+              </div>
+              <p class="font-semibold">&#8358;200,304</p>
+            </div>
+
+            <a href="./booking.html" class='bg-blue-500 font-medium grid place-items-center p-3 mt-3 rounded'>Continue to &#8358; 20,304</a>
           </div>
         </div>
       </div>

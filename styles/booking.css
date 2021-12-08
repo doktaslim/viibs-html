@@ -1,16 +1,17 @@
 * {
     padding: 0;
     margin: 0;
-    font-family: "Popping", "Inter";
+    font-family: 'Space Grotesk', sans-serif;
     font-size: 15px;
     --color1: #3885D8;
     --color2: #45FFFF;
-    --color3: #04070f;
+    --color3: #111827;
     --color4: rgb(87, 84, 84);
 }
 
 body {
-    background: #04070f;
+    background-color: #111827!important;
+    font-family: 'Space Grotesk', sans-serif;
 }
 .form {
     position: relative;
@@ -21,7 +22,7 @@ body {
     border-bottom: 2px solid var(--color2);
     background-color: unset;
     outline: none;
-    font-family: "Inter", "Poppins", Helvetica, sans-serif;
+    font-family: 'Space Grotesk', sans-serif;
     font-size: 1.5rem;
     color: #fff;
     min-width: 60vmin;
@@ -82,7 +83,7 @@ body {
 .image_desc h1 {
     font-size: 1.5rem;
     font-weight: 700;
-    font-family: "Inter", "poppings";
+    font-family: 'Space Grotesk', sans-serif;
 }
 
 .booking_state {
@@ -90,7 +91,7 @@ body {
     align-items: center;
     gap: 25px;
     color: #c7c5c5;
-    font-family: "Inter", "Poppings";
+    font-family: 'Space Grotesk', sans-serif;
     font-size: 1.2rem;
 }
 
@@ -101,7 +102,8 @@ body {
 .viibs_receiver {
     width: 56%!important;
     /* height: 450px; */
-    background-color: rgb(30, 27, 30) !important;
+    /* background-color: rgb(30, 27, 30) !important; */
+    background-color: #04070f;
     margin-top: 15px;
     padding: 20px;
     border-radius: 10px;

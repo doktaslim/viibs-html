@@ -5,11 +5,12 @@
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Space Grotesk', sans-serif;
 }
 
 #apple {
-    background: #000;
+    /* background: #000; */
+    background: #04070f;
     margin-top: 10px;
     outline: none;
 }
